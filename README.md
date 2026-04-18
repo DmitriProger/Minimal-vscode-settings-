@@ -2,7 +2,7 @@
 
 
 
-![image/2.png](%D0%9C%D0%BE%D0%B9%20%D1%81%D0%B5%D1%82%D0%B0%D0%BF%20vscode.assets/Screenshot%202026-04-18%20at%2021.28.31.png)
+![image/2.png](image/2.png)
 
 ### Краткое описание
 
