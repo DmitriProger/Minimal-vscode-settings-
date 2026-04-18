@@ -1,10 +1,21 @@
 {
-
+    // Отключаем лишние декорации и метки
+    "explorer.decorations.badges": false,
+    "git.decorations.enabled": false,
+    "scm.diffDecorations": "none",
     
+    // Установить длину одного tab
+    "editor.tabSize": 4,
+     // Настройка курсора
+    "editor.multiCursorModifier": "ctrlCmd",
+
+    "workbench.tree.indent": 14,
+    "excalidraw.workspaceLibraryPath": ".",
     // Связанные редактирования тегов
 	"editor.linkedEditing": true,
     "ruff.lineLength": 100,
     // Отображение символов
+     // Убрать значок для сворачивания кода
 	"editor.renderControlCharacters": false,
 
     "ruff.lint.ignore": ["F401"],
@@ -26,7 +37,7 @@
 	"breadcrumbs.showConstants": false,
 	"breadcrumbs.showEnumMembers": false,
 	"breadcrumbs.showConstructors": false,
-
+    
     // 💡 Проверка орфографии (en + ru)
 	// Настройки проверки орфографии
 	"cSpell.language": "en,ru",
@@ -41,6 +52,22 @@
 	"editor.pasteAs.showPasteSelector": "never",
     
     "workbench.editor.empty.hint": "hidden",
+    "workbench.colorCustomizations": {
+        "editorCursor.background": "#000000",
+        "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
+        "editorOverviewRuler.selectionHighlightForeground": "#0000",
+        "editorOverviewRuler.rangeHighlightForeground": "#0000",
+        "editorOverviewRuler.wordHighlightForeground": "#0000",
+        "editorOverviewRuler.bracketMatchForeground": "#0000",
+        "editorOverviewRuler.findMatchForeground": "#0000",
+        "editorOverviewRuler.modifiedForeground": "#0000",
+        "editorOverviewRuler.deletedForeground": "#0000",
+        "editorOverviewRuler.warningForeground": "#0000",
+        "editorOverviewRuler.addedForeground": "#0000",
+        "editorOverviewRuler.errorForeground": "#0000",
+        "editorOverviewRuler.infoForeground": "#0000",
+        "editorOverviewRuler.border": "#0000",
+    },
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "workbench.iconTheme": "flow-dim",
     "editor.fontSize": 21,
@@ -68,7 +95,6 @@
     },
     "workbench.colorTheme": "One Candy",
     "editor.cursorSmoothCaretAnimation": "on",
-    "workbench.colorCustomizations": {},
     "window.titleBarStyle": "custom",
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
@@ -128,12 +154,6 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "github.copilot.nextEditSuggestions.enabled": true,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
     "terminal.integrated.fontFamily": "JetBrainsMonoNFM-Regular",
     "cSpell.userWords": [
         "aiogram",
@@ -148,8 +168,16 @@
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
     "workbench.activityBar.location": "hidden",
-
-    
+    "editor.codeLens": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
 
 
 }
