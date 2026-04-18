@@ -1,0 +1,155 @@
+{
+
+    
+    // Связанные редактирования тегов
+	"editor.linkedEditing": true,
+    "ruff.lineLength": 100,
+    // Отображение символов
+	"editor.renderControlCharacters": false,
+
+    "ruff.lint.ignore": ["F401"],
+
+    // 💡 Breadcrumbs отключены полностью
+	// Настройки для Breadcrumbs
+    "editor.fontLigatures": true,
+	"breadcrumbs.icons": false,
+	"breadcrumbs.showKeys": false,
+    "breadcrumbs.showFiles": false,
+	"breadcrumbs.symbolPath": "off",
+	"breadcrumbs.showArrays": false,
+	"breadcrumbs.showEvents": false,
+	"breadcrumbs.showFields": false,
+	"breadcrumbs.showClasses": false,
+	"breadcrumbs.showMethods": false,
+	"breadcrumbs.showBooleans": false,
+	"breadcrumbs.showFunctions": false,
+	"breadcrumbs.showConstants": false,
+	"breadcrumbs.showEnumMembers": false,
+	"breadcrumbs.showConstructors": false,
+
+    // 💡 Проверка орфографии (en + ru)
+	// Настройки проверки орфографии
+	"cSpell.language": "en,ru",
+	"cSpell.enabled": true,
+
+    // 💡 Телеметрия отключена
+	"telemetry.telemetryLevel": "off",
+
+    // 💡 Отключаем фолдинг и селектор вставки
+	"editor.folding": false,
+	"editor.pasteAs.enabled": false,
+	"editor.pasteAs.showPasteSelector": "never",
+    
+    "workbench.editor.empty.hint": "hidden",
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "workbench.iconTheme": "flow-dim",
+    "editor.fontSize": 21,
+    "editor.parameterHints.enabled": false,
+    "editor.hover.enabled": "on",
+    "editor.hover.delay": 1000,
+    "editor.hover.sticky": true,
+    "python.createEnvironment.trigger": "off",
+    "chat.commandCenter.enabled": true,
+    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "workbench.colorTheme": "One Candy",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.colorCustomizations": {},
+    "window.titleBarStyle": "custom",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.occurrencesHighlight": "off",
+    "editor.matchBrackets": "never",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "files.insertFinalNewline": true,
+    "editor.lightbulb.enabled": "off",
+    "editor.showFoldingControls": "never",
+    "editor.guides.indentation": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "extensions.ignoreRecommendations": true,
+    "explorer.confirmDragAndDrop": false,
+    "editor.renderLineHighlight": "none",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.smoothScrolling": true,
+    "terminal.integrated.tabs.defaultIcon": "more",
+    "excalidraw.theme": "dark",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "python.languageServer": "Pylance",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.glyphMargin": false,
+    "editor.inlayHints.fontFamily": "JetBrains Mono",
+    "chat.editor.fontFamily": "JetBrains Mono",
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "debug.console.fontFamily": "JetBrains Mono",
+    "editor.stickyScroll.enabled": false,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "line",
+    "task.saveBeforeRun": "always",
+    "files.autoSave": "onFocusChange",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "ruff.enable": true,
+    "ruff.nativeServer": "on",
+    "ruff.organizeImports": true,
+    "ruff.fixAll": true,
+    "ruff.configuration": {
+        "line-length": 120,
+    "lint": {
+        "ignore": ["E501", "F401"]
+        },
+        "format": {
+            "quote-style": "double",
+            "indent-style": "space"
+        },
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "terminal.integrated.fontFamily": "JetBrainsMonoNFM-Regular",
+    "cSpell.userWords": [
+        "aiogram",
+        "AUTOINREMENT",
+        "dotenv"
+    ],
+    "claudeCode.preferredLocation": "panel",
+    "workbench.browser.showInTitleBar": false,
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "chat.unifiedAgentsBar.enabled": true,
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "hidden",
+
+    
+
+
+}
