@@ -1,84 +1,125 @@
 {
-    // Отключаем лишние декорации и метки
-    "explorer.decorations.badges": false,
-    "git.decorations.enabled": false,
-    "scm.diffDecorations": "none",
-    
-    // Установить длину одного tab
-    "editor.tabSize": 4,
-     // Настройка курсора
-    "editor.multiCursorModifier": "ctrlCmd",
-
-    "workbench.tree.indent": 14,
-    "excalidraw.workspaceLibraryPath": ".",
-    // Связанные редактирования тегов
-	"editor.linkedEditing": true,
-    "ruff.lineLength": 100,
-    // Отображение символов
-     // Убрать значок для сворачивания кода
-	"editor.renderControlCharacters": false,
-
-    "ruff.lint.ignore": ["F401"],
-
-    // 💡 Breadcrumbs отключены полностью
-	// Настройки для Breadcrumbs
+    // ── Шрифты ────────────────────────────────────────────────────────────────
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-	"breadcrumbs.icons": false,
-	"breadcrumbs.showKeys": false,
-    "breadcrumbs.showFiles": false,
-	"breadcrumbs.symbolPath": "off",
-	"breadcrumbs.showArrays": false,
-	"breadcrumbs.showEvents": false,
-	"breadcrumbs.showFields": false,
-	"breadcrumbs.showClasses": false,
-	"breadcrumbs.showMethods": false,
-	"breadcrumbs.showBooleans": false,
-	"breadcrumbs.showFunctions": false,
-	"breadcrumbs.showConstants": false,
-	"breadcrumbs.showEnumMembers": false,
-	"breadcrumbs.showConstructors": false,
-    
-    // 💡 Проверка орфографии (en + ru)
-	// Настройки проверки орфографии
-	"cSpell.language": "en,ru",
-	"cSpell.enabled": true,
-
-    // 💡 Телеметрия отключена
-	"telemetry.telemetryLevel": "off",
-
-    // 💡 Отключаем фолдинг и селектор вставки
-	"editor.folding": false,
-	"editor.pasteAs.enabled": false,
-	"editor.pasteAs.showPasteSelector": "never",
-    
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.colorCustomizations": {
-        "editorCursor.background": "#000000",
-        "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
-        "editorOverviewRuler.selectionHighlightForeground": "#0000",
-        "editorOverviewRuler.rangeHighlightForeground": "#0000",
-        "editorOverviewRuler.wordHighlightForeground": "#0000",
-        "editorOverviewRuler.bracketMatchForeground": "#0000",
-        "editorOverviewRuler.findMatchForeground": "#0000",
-        "editorOverviewRuler.modifiedForeground": "#0000",
-        "editorOverviewRuler.deletedForeground": "#0000",
-        "editorOverviewRuler.warningForeground": "#0000",
-        "editorOverviewRuler.addedForeground": "#0000",
-        "editorOverviewRuler.errorForeground": "#0000",
-        "editorOverviewRuler.infoForeground": "#0000",
-        "editorOverviewRuler.border": "#0000",
-    },
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "workbench.iconTheme": "flow-dim",
     "editor.fontSize": 21,
+    "editor.inlayHints.fontFamily": "JetBrains Mono",
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "debug.console.fontFamily": "JetBrains Mono",
+    "chat.editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "JetBrainsMonoNFM-Regular",
+    "terminal.integrated.fontSize": 20,
+
+    // ── Курсор ────────────────────────────────────────────────────────────────
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "line",
+
+    // ── Редактор ──────────────────────────────────────────────────────────────
+    "editor.tabSize": 4,
+    "editor.linkedEditing": true,
+    "editor.folding": false,
+    "editor.showFoldingControls": "never",
+    "editor.glyphMargin": false,
+    "editor.codeLens": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderLineHighlight": "none",
+    "editor.renderControlCharacters": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.matchBrackets": "never",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.guides.indentation": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.minimap.enabled": false,
     "editor.parameterHints.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+
+    // ── Hover ─────────────────────────────────────────────────────────────────
     "editor.hover.enabled": "on",
     "editor.hover.delay": 1000,
     "editor.hover.sticky": true,
+
+    // ── Вставка ───────────────────────────────────────────────────────────────
+    "editor.pasteAs.enabled": false,
+    "editor.pasteAs.showPasteSelector": "never",
+
+    // ── Breadcrumbs ───────────────────────────────────────────────────────────
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showFiles": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
+
+    // ── Форматирование ────────────────────────────────────────────────────────
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "files.insertFinalNewline": true,
+    "files.autoSave": "onFocusChange",
+    "task.saveBeforeRun": "always",
+
+    // ── Python ────────────────────────────────────────────────────────────────
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "python.languageServer": "Pylance",
     "python.createEnvironment.trigger": "off",
-    "chat.commandCenter.enabled": true,
-    "terminal.integrated.fontSize": 20,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+
+    // ── Ruff ──────────────────────────────────────────────────────────────────
+    "ruff.enable": true,
+    "ruff.nativeServer": "on",
+    "ruff.organizeImports": true,
+    "ruff.fixAll": true,
+    "ruff.lineLength": 100,
+    "ruff.lint.ignore": ["F401"],
+    "ruff.configuration": {
+        "line-length": 120,
+        "lint": {
+            "ignore": ["E501", "F401"]
+        },
+        "format": {
+            "quote-style": "double",
+            "indent-style": "space"
+        }
+    },
+
+    // ── Проверка орфографии ───────────────────────────────────────────────────
+    "cSpell.language": "en,ru",
+    "cSpell.enabled": true,
+    "cSpell.userWords": [
+        "aiogram",
+        "AUTOINREMENT",
+        "dotenv"
+    ],
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    },
+
+    // ── Декорации и Git ───────────────────────────────────────────────────────
+    "explorer.decorations.badges": false,
+    "git.decorations.enabled": false,
+    "scm.diffDecorations": "none",
+
+    // ── Проводник ─────────────────────────────────────────────────────────────
+    "explorer.confirmDragAndDrop": false,
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
         "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -93,85 +134,57 @@
         "*.sdb": "${capture}.${extname}-*",
         "*.s3db": "${capture}.${extname}-*"
     },
-    "workbench.colorTheme": "One Candy",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "window.titleBarStyle": "custom",
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "editor.occurrencesHighlight": "off",
-    "editor.matchBrackets": "never",
-    "editor.overviewRulerBorder": false,
-    "editor.hideCursorInOverviewRuler": true,
+
+    // ── Дерево ────────────────────────────────────────────────────────────────
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "none",
+
+    // ── Интерфейс ─────────────────────────────────────────────────────────────
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
-    "files.insertFinalNewline": true,
-    "editor.lightbulb.enabled": "off",
-    "editor.showFoldingControls": "never",
-    "editor.guides.indentation": false,
-    "workbench.tree.renderIndentGuides": "none",
-    "extensions.ignoreRecommendations": true,
-    "explorer.confirmDragAndDrop": false,
-    "editor.renderLineHighlight": "none",
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.smoothScrolling": true,
-    "terminal.integrated.tabs.defaultIcon": "more",
-    "excalidraw.theme": "dark",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.iconTheme": "flow-dim",
+    "workbench.colorTheme": "One Candy",
+    "workbench.activityBar.location": "hidden",
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "python.languageServer": "Pylance",
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.glyphMargin": false,
-    "editor.inlayHints.fontFamily": "JetBrains Mono",
-    "chat.editor.fontFamily": "JetBrains Mono",
-    "editor.codeLensFontFamily": "JetBrains Mono",
-    "debug.console.fontFamily": "JetBrains Mono",
-    "editor.stickyScroll.enabled": false,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorStyleInactive": "line",
-    "task.saveBeforeRun": "always",
-    "files.autoSave": "onFocusChange",
-    "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.ruff": "explicit",
-            "source.organizeImports.ruff": "explicit"
-        }
-    },
-    "ruff.enable": true,
-    "ruff.nativeServer": "on",
-    "ruff.organizeImports": true,
-    "ruff.fixAll": true,
-    "ruff.configuration": {
-        "line-length": 120,
-    "lint": {
-        "ignore": ["E501", "F401"]
-        },
-        "format": {
-            "quote-style": "double",
-            "indent-style": "space"
-        },
-    },
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "none",
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "terminal.integrated.fontFamily": "JetBrainsMonoNFM-Regular",
-    "cSpell.userWords": [
-        "aiogram",
-        "AUTOINREMENT",
-        "dotenv"
-    ],
-    "claudeCode.preferredLocation": "panel",
-    "workbench.browser.showInTitleBar": false,
-    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
-    "chat.unifiedAgentsBar.enabled": true,
     "workbench.navigationControl.enabled": false,
     "workbench.layoutControl.enabled": false,
+    "workbench.browser.showInTitleBar": false,
+
+    // ── Окно ──────────────────────────────────────────────────────────────────
+    "window.titleBarStyle": "custom",
     "window.commandCenter": false,
-    "workbench.activityBar.location": "hidden",
-    "editor.codeLens": false,
-    "editor.unicodeHighlight.allowedLocales": {
-        "ru": true
+
+    // ── Цвета ─────────────────────────────────────────────────────────────────
+    "workbench.colorCustomizations": {
+        "editorCursor.background": "#000000",
+        "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
+        "editorOverviewRuler.selectionHighlightForeground": "#0000",
+        "editorOverviewRuler.rangeHighlightForeground": "#0000",
+        "editorOverviewRuler.wordHighlightForeground": "#0000",
+        "editorOverviewRuler.bracketMatchForeground": "#0000",
+        "editorOverviewRuler.findMatchForeground": "#0000",
+        "editorOverviewRuler.modifiedForeground": "#0000",
+        "editorOverviewRuler.deletedForeground": "#0000",
+        "editorOverviewRuler.warningForeground": "#0000",
+        "editorOverviewRuler.addedForeground": "#0000",
+        "editorOverviewRuler.errorForeground": "#0000",
+        "editorOverviewRuler.infoForeground": "#0000",
+        "editorOverviewRuler.border": "#0000"
     },
+
+    // ── Терминал ──────────────────────────────────────────────────────────────
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.tabs.defaultIcon": "more",
+
+    // ── Расширения ────────────────────────────────────────────────────────────
+    "extensions.ignoreRecommendations": true,
+    "excalidraw.workspaceLibraryPath": ".",
+    "excalidraw.theme": "dark",
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+
+    // ── Copilot ───────────────────────────────────────────────────────────────
+    "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -179,5 +192,13 @@
         "scminput": false
     },
 
+    // ── Claude ────────────────────────────────────────────────────────────────
+    "claudeCode.preferredLocation": "panel",
 
+    // ── Чат ───────────────────────────────────────────────────────────────────
+    "chat.commandCenter.enabled": true,
+    "chat.unifiedAgentsBar.enabled": true,
+
+    // ── Телеметрия ────────────────────────────────────────────────────────────
+    "telemetry.telemetryLevel": "off"
 }
